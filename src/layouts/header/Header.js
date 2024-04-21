@@ -1,5 +1,5 @@
 import React from "react";
-export const Header = () => {
+const Header = () => {
   return (
     <div className="flex justify-between items-center border-solid border-[1px] border-black">
       <div className="w-[100px]">
@@ -16,3 +16,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;

@@ -1,6 +1,6 @@
 import React from "react";
 import RestaurantCard from "../../components/RestaurantCard";
-export const Body = () => {
+const Body = () => {
   const restData = [
     {
       info: {
@@ -643,3 +643,5 @@ export const Body = () => {
     </div>
   );
 };
+
+export default Body;
