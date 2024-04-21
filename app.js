@@ -1,26 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const Header = () => {
-  return (
-    <div className="header">
-      <div>
-        <img src={require("./src/assets/image/food_logo.png")} alt="" />
-      </div>
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
+import { Header } from "./src/layouts/header/Header";
+import { Body } from "./src/layouts/body/Body";
 const AppLayout = () => {
   return (
     <div className="app">
-      <Header />
+      <Theme>
+        <Header />
+        <Body />
+      </Theme>
     </div>
   );
 };
